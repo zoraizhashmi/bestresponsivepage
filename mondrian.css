@@ -1,0 +1,70 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+}
+
+.wide-col {
+	width: 60%;
+	height: 100%;
+	display: flex;
+}
+
+.narrow-col {
+	width: 40%;
+	height: 100%;
+	display: block;	
+}
+
+.box {
+	width: 50%;
+	height: 100%;
+}
+
+.blue {background-color: #0D11A8;}
+.red {background-color: #F50F0F;}
+.yellow {background-color: #FAE317;}
+
+
+/* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+/* If you're using 'display: flex' this class can be used to easily center horizontally! */
+.center-horizontal {
+	align-items: center;	
+}
+
+/* If you're using 'display: flex' this class can be used to easily center vertically! */
+.center-vertical {
+	justify-content: center;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+/* Keep your image from overflowing it's parent DIV */
+.contain-image {
+	max-height: 75%;
+	max-width: 75%;
+}
+@media only screen and (max-width: 800px) {
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: block;
+}
+
+.wide-col {
+	width: 100%;
+	height: 60%;
+	display: flex;
+}
+
+.narrow-col {
+	width: 100%;
+	height: 40%;
+	display: flex;	
+}
+}
